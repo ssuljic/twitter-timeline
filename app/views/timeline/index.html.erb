@@ -1,7 +1,6 @@
 <script>
     $(document).ready(function() {
         $.getJSON( "/timeline.json", function( data ) {
-            console.log(data)
             createStoryJS({
                 type:               'timeline',
                 width:              '100%',
@@ -9,8 +8,8 @@
                 source:              data,
                 embed_id:            'timeline',
                 start_zoom_adjust:   2,
-                js:                  'assets/timeline.js',
-                css:                 'assets/timeline.css'
+                js:                  "<%= asset_path 'timeline.js' %>",
+                css:                 "<%= asset_path 'timeline.css' %>"
             });   
         });
     });
