@@ -22,7 +22,7 @@ class TimelineController < ApplicationController
       d = Hash.new
       d[:startDate] = '%s,%s,%s' % [t.created_at.year, t.created_at.month, t.created_at.day]
       d[:endDate] = '%s,%s,%s' % [t.created_at.year, t.created_at.month, t.created_at.day]
-      d[:headline] = 'Yet Another Tweet'
+      d[:headline] = '@' + (t.retweet? ? t.retweeted_tweet.user.username : t.user.username)
       d[:text] = ''
       d[:asset] = Hash.new
         d[:asset][:media] = t.url.to_s
