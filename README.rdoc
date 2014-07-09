@@ -1,5 +1,5 @@
 == README
-<a href="https://codeclimate.com/github/ssuljic/twitter-timeline"><img src="https://codeclimate.com/github/ssuljic/twitter-timeline.png" /></a>
+{<img src="https://codeclimate.com/github/rails/rails.png" />}[https://codeclimate.com/github/rails/rails]
 
 Demo app for connecting twitter user timeline and timeline.js 
 http://ssuljic-timeline.herokuapp.com/
