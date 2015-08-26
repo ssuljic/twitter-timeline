@@ -35,7 +35,7 @@ group :development do
   gem 'pry-rails', :group => :development
   gem "binding_of_caller"
   gem "better_errors"
-  gem "debugger"
+  gem "byebug"
   gem "sqlite3"
 end
 
